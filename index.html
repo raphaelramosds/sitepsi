@@ -1,168 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Franquia de Prontuários Eletrônicos</title>
+  <title>Franquia de Prontuários Eletrônicos</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/creative.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/Geral.png" width="50px"> </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
-            </li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/Geral.png" width="50px"> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Suporte</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Suporte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1><span>Prontuários em toda hora e em qualquer lugar</span></h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">Prontuários em um Sistema Inteligente conta com seus desenvolvedores para fornecer
+            vários sistemas de prontuários eletrônicos que atendam necessidades em específico para cada área da saúde
+            pública. Faça algo parecido com isso </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saber mais</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1><span>Prontuários em toda hora e em qualquer lugar</span></h1>
+  <section class="bg-white" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-black">Nossos produtos</h2>
+          <hr class="my-4">
+          <p class="text-muted text-faded mb-4">Atualmente, desenvolvemos sistemas para as áreas da saúde pública com
+            preços distribuídos em pacotes de longo prazo</p>
+        </div>
+      </div>
+
+      <script>
+
+        function alterar(mensal) {
+          semestral = 6 * mensal
+          anual = 2 * semestral
+
+          opcao = document.getElementById('pagamento').value
+          preco = document.getElementById('preco')
+          periodo = document.getElementById('tempo')
+
+          if (opcao == "anual") {
+            preco.innerHTML = anual
+            periodo.innerHTML = "/ano"
+          }
+          else {
+            preco.innerHTML = semestral
+            periodo.innerHTML = "/semestre"
+          }
+
+        }
+
+
+      </script>
+
+      <div class="row">
+        <!-- Para tirar do centro, omita a classe mx-auto -->>
+        <div class="col-lg-4 col-md-6 text-center mx-auto">
+          <div class="service-box mt-5 mx-auto bg-white p-5">
+            <img src="img/Psicologia.png" class="mb-4" width="80px">
+            <h3 class="mb-1 text-primary font-weight-bold">Psicologia</h3>
+            <h2 class="text-black mt-2 sr-icon-1 font-weight-bold mb-3">
+              <strong class="h6">R$</strong> <span id="preco">71.94</span> <span class="h6" id="tempo">/semestral</span></h2>
+            <hr class="my-4">
+            <p class="text-muted mb-3">Sessões e Descrição do tratamento adotado são algumas das funcionalidades desse
+              sistema exclusivo para Psicologia</p>
+            <select class="form-control form-control-sm" id="pagamento" onchange="alterar(11.99)">
+              <option value="semestral">Semestral</option>
+              <option value="anual">Anual</option>
+            </select>
+            <a class="btn btn-xl mt-5 text-black" style="border:1px solid #1c1c1c;border-radius: 10px; ">ASSINAR</a>
             <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Prontuários em um Sistema Inteligente conta com seus desenvolvedores para fornecer vários sistemas de prontuários eletrônicos que atendam necessidades em específico para cada área da saúde pública. Faça algo parecido com isso </p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saber mais</a>
+            <a href="">Ir para a tela de login</a>
           </div>
         </div>
-      </div>
-    </header>
-
-    <section class="bg-white" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-black">Nossos produtos</h2>
+        
+        <!-- <div class="col-lg-4 col-md-6 text-center mx-auto">
+          <div class="service-box mt-5 mx-auto bg-white p-5">
+            <img src="img/Fisioterapia.png" class="mb-4" width="80px">
+            <h3 class="mb-1 text-primary font-weight-bold">Fisioterapia</h3>
+            <h2 class="text-black mt-2 sr-icon-1 font-weight-bold mb-3"><strong class="h6">R$</strong> 177,00 <strong
+                class="h6">/ano</strong></h2>
             <hr class="my-4">
-            <p class="text-muted text-faded mb-4">Atualmente, desenvolvemos sistemas para as áreas da saúde pública com preços distribuídos em pacotes de longo prazo</p>
+            <p class="text-muted mb-3">Sessões e Descrição do tratamento adotado são algumas das funcionalidades desse
+              sistema exclusivo para Psicologia</p>
+            <select class="form-control form-control-sm">
+              <option value="semestral">Semestral</option>
+              <option value="anual">Anual</option>
+            </select>
+            <a class="btn btn-xl mt-5 text-black" style="border:1px solid #1c1c1c;border-radius: 10px; ">ASSINAR</a>
+            <hr>
+            <a href="">Ir para a tela de login</a>
           </div>
         </div>
+      </div> -->
 
-        <div class="row">
-          <!-- Para tirar do centro, omita a classe mx-auto -->>
-          <div class="col-lg-4 col-md-6 text-center mx-auto">
-            <div class="service-box mt-5 mx-auto bg-white p-5">
-              <img src="img/Psicologia.png" class="mb-4" width="80px">
-              <h3 class="mb-1 text-primary font-weight-bold">Psicologia</h3>
-              <h2 class="text-black mt-2 sr-icon-1 font-weight-bold mb-3"><strong class="h6">R$</strong> 177,00 <strong class="h6">/ano</strong></h2>
-              <hr class="my-4">
-              <p class="text-muted mb-3">Sessões e Descrição do tratamento adotado são algumas das funcionalidades desse sistema exclusivo para Psicologia</p>
-              <select class="form-control form-control-sm">
-                <option>Semestral</option>
-                <option>Anual</option>
-              </select>
-              <a class="btn btn-xl mt-5 text-black" style="border:1px solid #1c1c1c;border-radius: 10px; " >ASSINAR</a>
-              <hr>
-              <a href="" >Ir para a tela de login</a>
-            </div>
-          </div>
+    </div>
+  </section>
 
-          <div class="col-lg-4 col-md-6 text-center mx-auto">
-              <div class="service-box mt-5 mx-auto bg-white p-5">
-                <img src="img/Fisioterapia.png" class="mb-4" width="80px">
-                <h3 class="mb-1 text-primary font-weight-bold">Fisioterapia</h3>
-                <h2 class="text-black mt-2 sr-icon-1 font-weight-bold mb-3"><strong class="h6">R$</strong> 177,00 <strong class="h6">/ano</strong></h2>
-                <hr class="my-4">
-                <p class="text-muted mb-3">Sessões e Descrição do tratamento adotado são algumas das funcionalidades desse sistema exclusivo para Psicologia</p>
-                <select class="form-control form-control-sm">
-                  <option>Semestral</option>
-                  <option>Anual</option>
-                </select>
-                <a class="btn btn-xl mt-5 text-black" style="border:1px solid #1c1c1c;border-radius: 10px; " >ASSINAR</a>
-                <hr>
-                <a href="" >Ir para a tela de login</a>
-              </div>
-            </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">O que o PSI oferece?</h2>
-            <hr class="my-4">
-          </div>
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">O que o PSI oferece?</h2>
+          <hr class="my-4">
         </div>
       </div>
-      <div class="container">
-        <div class="row">
+    </div>
+    <div class="container">
+      <div class="row">
 
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-globe fa-4x text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Virtualização </h3>
-              <p class="text-muted mb-0">Abandone seus papéis e use nosso sistema com filtros de buscas e pastas de pacientes com seus vários prontuários e sessões</p>
-            </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fas fa-globe fa-4x text-primary mb-3 sr-icon-2"></i>
+            <h3 class="mb-3">Virtualização </h3>
+            <p class="text-muted mb-0">Abandone seus papéis e use nosso sistema com filtros de buscas e pastas de
+              pacientes com seus vários prontuários e sessões</p>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-calendar-alt fa-4x text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Agendamento </h3>
-              <p class="text-muted mb-0">Conte com uma ou mais secretárias para cada clínica que você trabalha. Assim, ela pode agendar as consultas dos seus pacientes</p>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fas fa-calendar-alt fa-4x text-primary mb-3 sr-icon-3"></i>
+            <h3 class="mb-3">Agendamento </h3>
+            <p class="text-muted mb-0">Conte com uma ou mais secretárias para cada clínica que você trabalha. Assim,
+              ela pode agendar as consultas dos seus pacientes</p>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-lock fa-4x  text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Segurança </h3>
-              <p class="text-muted mb-0">Nenhum usuário além de você poderá visualizar os prontuários dos seus pacientes ou informações de consultas agendadas</p>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fas fa-lock fa-4x  text-primary mb-3 sr-icon-4"></i>
+            <h3 class="mb-3">Segurança </h3>
+            <p class="text-muted mb-0">Nenhum usuário além de você poderá visualizar os prontuários dos seus pacientes
+              ou informações de consultas agendadas</p>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-location-arrow fa-4x  text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Mobilidade  </h3>
-              <p class="text-muted mb-0">Cadastre todos os seus locais de atendimento e separe os prontuários para os locais que convém</p>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fas fa-location-arrow fa-4x  text-primary mb-3 sr-icon-4"></i>
+            <h3 class="mb-3">Mobilidade </h3>
+            <p class="text-muted mb-0">Cadastre todos os seus locais de atendimento e separe os prontuários para os
+              locais que convém</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- <section class="p-0" id="portfolio">
+  <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -171,10 +207,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Tela de agendamentos
                   </div>
                 </div>
               </div>
@@ -186,10 +222,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Clínicas cadastradas
                   </div>
                 </div>
               </div>
@@ -201,10 +237,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Filtro de CID10/DSM
                   </div>
                 </div>
               </div>
@@ -216,10 +252,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Encaixe de pacientes
                   </div>
                 </div>
               </div>
@@ -231,10 +267,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Lista de Pacientes 
                   </div>
                 </div>
               </div>
@@ -246,10 +282,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Psicologia
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Tela Inicial do Sistema de Psicologia
                   </div>
                 </div>
               </div>
@@ -257,61 +293,62 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section> 
 
-    <!-- <section class="bg-dark text-white">
+  <!-- <section class="bg-dark text-white">
       <div class="container text-center">
         <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
         <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
       </div>
     </section> -->
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Suporte</h2>
-            <hr class="my-4">
-            <p class="mb-5">Nossa equipe está disposta a ouvir suas dúvidas</p>
-          </div>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Suporte</h2>
+          <hr class="my-4">
+          <p class="mb-5">Nossa equipe está disposta a ouvir suas dúvidas</p>
         </div>
-        <div class="row">
-          <!-- <div class="col-lg-4 ml-auto text-center">
+      </div>
+      <div class="row">
+        <!-- <div class="col-lg-4 ml-auto text-center">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
             <p>123-456-6789</p>
           </div> -->
-          <div class="col-lg-12 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:psi.enterpriseweb@gmail.com">psi.enterpriseweb@gmail.com</a>
-            </p>
-          </div>
+        <div class="col-lg-12 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+          <p>
+            <a href="mailto:psi.enterpriseweb@gmail.com">psi.enterpriseweb@gmail.com</a>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="text-black" style="background:#F9F4F4;">
-      <div class="container text-center">
-        <img src="img/Geral.png" class="mb-2" width="100px"> 
-        <hr class="mb-3">
-        <h4 class="mb-4">Equipe de Prontuários em um Sistema Inteligente</h4>
-        <p class="mb-5">© 2017 PSI </p>
-        
-      </div>
-    </section>
+  <section class="text-black" style="background:#F9F4F4;">
+    <div class="container text-center">
+      <img src="img/Geral.png" class="mb-2" width="100px">
+      <hr class="mb-3">
+      <h4 class="mb-4">Equipe de Prontuários em um Sistema Inteligente</h4>
+      <p class="mb-5">© 2017 PSI </p>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  </body>
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+
+</body>
 
 </html>
